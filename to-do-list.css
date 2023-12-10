@@ -1,0 +1,124 @@
+* {
+    font-family: 'Margarine', sans-serif;
+    background-color: #B3887C;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    height: 5.125rem;
+    width: 26.125rem;
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #F6F6F6;
+    text-shadow: -4px 4px 0px rgba(0, 0, 0, 0.63);
+    font-size: 3.75rem;
+    font-weight: 400;
+}
+
+.container {
+    width: 720px;
+    max-width: 100%;
+    margin: 10rem auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #F4F1E1;
+    box-shadow: 4px 8px 53.2px 0px rgba(0, 0, 0, 0.51);
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: #F4F1E1;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.input-container label {
+    width: 20%;
+    background-color: inherit;
+    color: #624A45;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.input-container input {
+    flex-grow: 1; /* Take up the available space */
+    background-color: inherit;
+    padding: 10px;
+    border: 0;
+    font-size: 1rem;
+}
+
+.input-container button {
+    width: 112px; /* Set a fixed width for the button */
+    height: 32px;
+    border: 0;
+    border-radius: 40px;
+    margin-left: 10px;
+    color: #fff;
+    background-color: #624A45;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+hr {
+    background-color: #624A45;
+    border: 3px solid #624A45;
+    border-radius: 10px;
+}
+
+.tasks {
+    background-color: #F4F1E1;
+}
+
+ul {
+    margin: 0 10px;
+    list-style: none; 
+}
+
+ul li {
+    position: relative;
+    background-color: #F4F1E1;
+    color: #624A45;
+    padding: 10px 0;
+    display: flex;
+    align-items: center; 
+}
+
+ul li span {
+    background-color: #F4F1E1;
+    font-size: 20px;
+    flex-grow: 1; 
+    margin-left:10px ;
+}
+
+li button {
+    font-size: 20px;
+    color: #F6F6F6;
+    background-color: #F96969;
+    width: 112px;
+    height: 32px;
+    border-radius: 40px;
+    margin-left: 10px;
+}
+
+ul li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #A48D84;
+    border-bottom: 2px dashed #A48D84;
+}
+ul li.completed span {
+    opacity: 0.8;
+    text-decoration: line-through;
+}
